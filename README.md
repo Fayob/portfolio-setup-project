@@ -30,9 +30,12 @@ Major languages: html, css
 ## Author
 
 👨 Abimbola Favour Adedeji
-GitHub: github.com/fayob
-Twitter: twitter.com/Fabimworld2536
-LinkedIn: LinkedIn.com/in/abimbola-ade
+
+GitHub: [@fayob](github.com/fayob)
+
+Twitter:[@fabimworld2536](twitter.com/Fabimworld2536)
+
+LinkedIn: [@abimbola](LinkedIn.com/in/abimbola-ade)
 
 ## Contributing
 

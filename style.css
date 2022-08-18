@@ -32,6 +32,11 @@ main {
   background-size: 100% 100%;
 }
 
+.header_container a {
+  text-decoration: none;
+  color: #172b4d;
+}
+
 .intro_section h1 {
   color: #172b4d;
   flex: none;
@@ -43,6 +48,7 @@ main {
   line-height: 52px;
   letter-spacing: 0;
   text-align: center;
+  margin-bottom: 2.5rem;
 }
 
 .intro_section span {
@@ -65,7 +71,7 @@ main {
 }
 
 ul {
-  margin-top: 0.5rem;
+  margin-top: 6rem;
   list-style-type: none;
   display: flex;
   justify-content: center;
