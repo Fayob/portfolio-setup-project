@@ -29,9 +29,9 @@ Major languages: html, css
 
 ## Author
 
-👨 Abimbola Adedeji
-GitHub: @fayob
-Twitter: @Fabimworld2536
+👨 Abimbola Favour Adedeji
+GitHub: github.com/fayob
+Twitter: twitter.com/Fabimworld2536
 LinkedIn: LinkedIn.com/in/abimbola-ade
 
 ## Contributing
