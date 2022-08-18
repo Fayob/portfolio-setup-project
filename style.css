@@ -2,10 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: 1px solid black;
 }
 
 body {
-  margin: 0.5rem;
+  margin: 1rem;
   padding: 1rem;
 }
 
@@ -30,10 +31,13 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .intro_section h1 {
   color: #172b4d;
+  width: 327px;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -43,6 +47,7 @@ main {
   line-height: 52px;
   letter-spacing: 0;
   text-align: center;
+  align-self: center;
 }
 
 .intro_section span {
@@ -50,8 +55,8 @@ main {
 }
 
 .intro_section p {
-  /* width: 327px; */
-  height: 164px;
+  width: 327px;
+  height: 200px;
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
@@ -61,6 +66,8 @@ main {
   flex: none;
   order: 1;
   flex-grow: 0;
+  align-self: center;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -73,4 +80,82 @@ ul {
 
 ul li {
   padding: 1rem;
+}
+
+section {
+  font-size: 30px;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.underline {
+  width: 60px;
+  border: 2px solid rgb(25, 121, 25);
+  border-radius: 20%;
+  margin-top: 0.4rem;
+  margin-bottom: 4rem;
+  align-self: center;
+}
+
+/* .card div {
+  grid-area: image;
+  background-color: #172b4d;
+  width: 91%;
+}
+.card h5 {
+  grid-area: header;
+  width: 91%;
+}
+.card ul {
+  grid-area: list;
+width: 91%;
+}
+.card button {
+  grid-area: button;
+} */
+.card {
+   width: 100%;
+   display: flex;
+}
+
+.card .details {
+    height: 252px;
+    align-items: center;
+}
+
+.card img {
+    width: inherit;
+}
+
+.card ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0.5rem;
+}
+
+.card ul li {
+  width: inherit;
+  font-size: large;
+  background-color: #ebf0ee; 
+  color: #3a4a42;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.card button {
+  cursor: pointer;
+  width: 100px;
+  background-color: rgb(38, 151, 38);
+  color: aliceblue;
+  border-radius: 5px;
+  height: 2rem;
+  margin-bottom: 1rem;
+  font-size: large;
 }
