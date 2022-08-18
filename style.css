@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 
 body {
@@ -70,11 +70,11 @@ main {
   align-self: center;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 ul {
-  margin-top: 5rem;
+  margin-top: 0.5rem;
   list-style-type: none;
   display: flex;
   justify-content: center;
