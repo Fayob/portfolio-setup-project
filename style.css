@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* border: 1px solid black; */
 }
 
 body {
@@ -20,17 +19,17 @@ body {
 }
 
 .navbar img {
-    align-self: center;
+  align-self: center;
   height: 28px;
   left: 12px;
   top: 10px;
 }
 
 main {
-    background-image: url("/assets/header-illsutration-mobile@2x.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+  background-image: url("/assets/header-illsutration-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 .intro_section h1 {
@@ -38,7 +37,6 @@ main {
   flex: none;
   order: 0;
   flex-grow: 0;
-  /* width: 327px; */
   height: 192px;
   font-size: 2.5rem;
   font-weight: 700;
@@ -67,12 +65,12 @@ main {
 }
 
 ul {
-    margin-top: 0.5rem;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
+  margin-top: 0.5rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 
 ul li {
-    padding: 1rem;
+  padding: 1rem;
 }
