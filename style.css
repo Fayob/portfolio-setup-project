@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   box-shadow: none;
-  /* border: 1px solid black; */
 }
 
 body {
@@ -70,31 +69,35 @@ main {
   order: 1;
   flex-grow: 0;
   align-self: center;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   padding-top: 2rem;
 }
 
-ul {
-  margin-top: 0.5rem;
+main > div {
+  align-self: center;
+  margin: 1rem 0;
+}
+
+main ul {
+  margin-top: 2.5rem;
   list-style-type: none;
   display: flex;
   justify-content: center;
 }
 
-ul a {
-  color: #505F79;
+main ul a {
+  color: #505f79;
   font-size: larger;
 }
 
-ul li {
+main ul li {
   padding: 1rem;
 }
 
 section {
   font-size: 30px;
   text-align: center;
-  /* padding: 1rem; */
   display: flex;
   flex-direction: column;
 }
@@ -121,11 +124,11 @@ section h2 {
 
 .card {
   height: 474px;
-    width: 327px;
-    border-radius: 8px;
-    background-color: #ebf0ee;
-    margin: 0.5rem 0;
-    margin-left: -22px;
+  width: 327px;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  margin: 0.5rem 0;
+  margin-left: -22px;
 }
 
 .card .img {
@@ -135,23 +138,24 @@ section h2 {
 }
 
 .card .details {
-    display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 16px;
-      gap: 16px;
-      width: 327px;
-      height: 222px;
-      background: #fff;
-      border-radius: 8px;
-      margin-top: -10px;
-      color: #3a4a42;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  width: 327px;
+  height: 222px;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: -10px;
+  color: #3a4a42;
 }
 
 .card ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style-type: none;
 }
 
 .card ul li {
@@ -175,9 +179,9 @@ section h2 {
   font-weight: 20px;
   color: #ebf0ee;
   font-size: large;
-  background: #36B37F;
+  background: #36b37f;
   border: 1px solid #36b37f;
-    border-radius: 4px;
+  border-radius: 4px;
 }
 
 .about_me {
@@ -192,33 +196,32 @@ section h2 {
 .about_me h2 {
   margin-top: 2rem;
   font-weight: bold;
-  color: #172B4D;
+  color: #172b4d;
   font-size: 40px;
 }
 
 .about_me p {
   width: 320px;
-    height: 150px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    text-align: center;
-    color: #42526e;
-    margin: 2rem 0;
+  height: 150px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+  margin: 2rem 0;
 }
 
 .about_me button {
-    padding: 12px;
-    /* gap: 10px; */
-    width: 159px;
-    height: 48px;
-    font-size: 15px;
-    background-color: #36b37f;
-    border: 1px solid #36b37f;
-    color: #ffffff;
-    border-radius: 4px;
-    margin: 2rem 0;
+  padding: 12px;
+  width: 159px;
+  height: 48px;
+  font-size: 15px;
+  background-color: #36b37f;
+  border: 1px solid #36b37f;
+  color: #fff;
+  border-radius: 4px;
+  margin: 2rem 0;
 }
 
 .about_me .container {
@@ -226,7 +229,7 @@ section h2 {
   height: 352px;
   margin: 0.5rem 0;
   background: #ebf0ee;
-  border: 1px solid #C1C7D0;
+  border: 1px solid #c1c7d0;
   border-radius: 8px;
 }
 
@@ -240,16 +243,17 @@ section h2 {
   justify-content: center;
   flex-flow: row wrap;
   align-items: center;
+  list-style-type: none;
 }
 
 .about_me .container ul li {
   align-self: center;
   padding: 12px;
   min-width: 72px;
-  height: 40px;  
-  background: #ffffff;
-    border-radius: 8px;
-    margin: 4px;
-    font-size: small;
-    color: #36b37e
+  height: 40px;
+  background: #fff;
+  border-radius: 8px;
+  margin: 4px;
+  font-size: small;
+  color: #36b37e;
 }
