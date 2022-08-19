@@ -49,7 +49,8 @@ main {
   letter-spacing: 0;
   text-align: center;
   align-self: center;
-  padding-top: 2rem;
+  padding-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 .intro_section span {
@@ -77,6 +78,9 @@ main {
 main > div {
   align-self: center;
   margin: 1rem 0;
+
+  /* width: 40px;
+  height: 40px; */
 }
 
 main ul {
@@ -167,7 +171,9 @@ section h2 {
   margin-left: 4px;
   font-size: 12px;
   font-weight: bold;
-  color: #172b4d;
+  color: #3a4a42;
+  line-height: 16px;
+  letter-spacing: 0.03em;
 }
 
 .card button {
@@ -191,6 +197,10 @@ section h2 {
   font-size: 20px;
   text-align: center;
   padding: 1rem;
+}
+
+.about_me_background {
+  background: url("/assets/illustration-\ about\ me-\ mobile.png");
 }
 
 .about_me h2 {
@@ -221,7 +231,7 @@ section h2 {
   border: 1px solid #36b37f;
   color: #fff;
   border-radius: 4px;
-  margin: 2rem 0;
+  margin: 1rem 0 3rem 0;
 }
 
 .about_me .container {
@@ -250,6 +260,7 @@ section h2 {
   align-self: center;
   padding: 12px;
   min-width: 72px;
+  font-weight: 600;
   height: 40px;
   background: #fff;
   border-radius: 8px;
