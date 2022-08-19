@@ -133,8 +133,9 @@ section h2 {
   border-radius: 8px;
   background-color: #ebf0ee;
   margin: 0.5rem 0;
-  /* margin-left: -22px; */
   border: 2px solid #ebf0ee;
+
+  /* margin-left: -22px; */
 }
 
 .card .img {
