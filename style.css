@@ -9,11 +9,11 @@ body {
   margin: 1rem;
   padding: 1rem;
   width: 327px;
+  font-family: 'Inter', sans-serif;
 }
 
 .header_container {
   padding: 0.5rem;
-  font-family: sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,9 +44,9 @@ main {
   flex-grow: 0;
   height: 192px;
   font-size: 2.5rem;
+  font-style: normal;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0;
   text-align: center;
   align-self: center;
   padding-top: 4rem;
@@ -84,7 +84,7 @@ main > div {
 }
 
 main ul {
-  margin-top: 2.5rem;
+  margin-top: 5rem;
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -124,6 +124,7 @@ section h2 {
 .section_container {
   display: grid;
   grid-template-columns: 327px;
+  justify-content: center;
 }
 
 .card {
@@ -132,7 +133,8 @@ section h2 {
   border-radius: 8px;
   background-color: #ebf0ee;
   margin: 0.5rem 0;
-  margin-left: -22px;
+  /* margin-left: -22px; */
+  border: 2px solid #ebf0ee;
 }
 
 .card .img {
@@ -147,11 +149,9 @@ section h2 {
   align-items: center;
   padding: 16px;
   gap: 16px;
-  width: 327px;
-  height: 222px;
+  height: 210px;
   background: #fff;
   border-radius: 8px;
-  margin-top: -10px;
   color: #3a4a42;
 }
 
@@ -163,7 +163,7 @@ section h2 {
 }
 
 .card ul li {
-  padding: 12px;
+  padding: 8px;
   max-width: 103px;
   height: 32px;
   background: #ebf0ee;
@@ -228,10 +228,10 @@ section h2 {
   height: 48px;
   font-size: 15px;
   background-color: #36b37f;
-  border: 1px solid #36b37f;
+  border: 1.5px solid #36b37f;
   color: #fff;
   border-radius: 4px;
-  margin: 1rem 0 3rem 0;
+  margin: 2rem 0 3rem 0;
 }
 
 .about_me .container {
@@ -258,13 +258,13 @@ section h2 {
 
 .about_me .container ul li {
   align-self: center;
-  padding: 12px;
-  min-width: 72px;
+  padding: 10px;
+  min-width: 60px;
   font-weight: 600;
   height: 40px;
   background: #fff;
   border-radius: 8px;
-  margin: 4px;
+  margin: 3px;
   font-size: small;
   color: #36b37e;
 }
