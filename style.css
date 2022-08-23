@@ -180,6 +180,7 @@ section h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   width: 122px;
   height: 48px;
   font-weight: 20px;
@@ -223,6 +224,7 @@ section h2 {
 }
 
 .about_me button {
+  cursor: pointer;
   padding: 12px;
   width: 159px;
   height: 48px;
@@ -310,6 +312,7 @@ section h2 {
 }
 
 .contact_me button {
+  cursor: pointer;
   padding: 10px;
   width: 120px;
   height: 38px;
