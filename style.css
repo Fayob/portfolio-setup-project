@@ -8,7 +8,7 @@
 body {
   margin: 1rem;
   padding: 1rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .header_container {
@@ -180,6 +180,7 @@ section h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   width: 122px;
   height: 48px;
   font-weight: 20px;
@@ -223,6 +224,7 @@ section h2 {
 }
 
 .about_me button {
+  cursor: pointer;
   padding: 12px;
   width: 159px;
   height: 48px;
@@ -267,4 +269,83 @@ section h2 {
   margin: 3px;
   font-size: small;
   color: #36b37e;
+}
+
+.contact_me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: inherit;
+  margin-bottom: 1rem;
+}
+
+.contact_me_header {
+  width: 327px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  margin: 1rem;
+}
+
+.contact_me form {
+  background: #fff;
+  width: 327px;
+  border-radius: 4px;
+}
+
+.contact_me form input {
+  display: block;
+  width: inherit;
+  margin: 1rem 0;
+  padding: 0.6rem;
+}
+
+.contact_me form textarea {
+  display: block;
+  width: inherit;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.contact_me button {
+  cursor: pointer;
+  padding: 10px;
+  width: 120px;
+  height: 38px;
+  font-size: 17px;
+  font-style: normal;
+  background-color: #36b37f;
+  border: 1.5px solid #36b37f;
+  color: #fff;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.footer_lists {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_lists a {
+  color: #505f79;
+  font-size: larger;
+}
+
+.footer_list {
+  padding: 1rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #42526e;
+}
+
+.footer p {
+  text-align: center;
+  margin-bottom: 2rem;
 }
