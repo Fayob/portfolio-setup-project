@@ -270,7 +270,6 @@ section h2 {
 }
 
 .contact_me {
-  /* background: #e5e5e5; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -278,7 +277,7 @@ section h2 {
   margin-bottom: 1rem;
 }
 
-.contact_me h4 {
+.contact_me_header {
   width: 327px;
   font-style: normal;
   font-weight: 700;
@@ -290,7 +289,7 @@ section h2 {
 }
 
 .contact_me form {
-  background: #ffffff;
+  background: #fff;
   width: 327px;
   border-radius: 4px;
 }
@@ -299,47 +298,51 @@ section h2 {
   display: block;
   width: inherit;
   margin: 1rem 0;
-  padding: 0.5rem;
+  padding: 0.6rem;
 }
 
 .contact_me form textarea {
   display: block;
   width: inherit;
   margin: 0.5rem 0;
-  padding: 0.3rem;
+  padding: 0.5rem;
   font-family: "Inter", sans-serif;
 }
 
 .contact_me button {
   padding: 10px;
-    width: 120px;
-    height: 38px;
-    font-size: 17px;
-    font-style: normal;
-    background-color: #36b37f;
-    border: 1.5px solid #36b37f;
-    color: #fff;
-    border-radius: 4px;
-    margin: 1rem 0;
+  width: 120px;
+  height: 38px;
+  font-size: 17px;
+  font-style: normal;
+  background-color: #36b37f;
+  border: 1.5px solid #36b37f;
+  color: #fff;
+  border-radius: 4px;
+  margin: 1rem 0;
 }
 
-footer ul {
+.footer_lists {
   list-style-type: none;
-    display: flex;
-    justify-content: center;
-  }
-  
-  footer ul a {
-    color: #505f79;
-    font-size: larger;
-  }
-  
-  footer ul li {
-    padding: 1rem;
-  }
+  display: flex;
+  justify-content: center;
+}
 
-  footer p {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
+.footer_lists a {
+  color: #505f79;
+  font-size: larger;
+}
 
+.footer_list {
+  padding: 1rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #42526e;
+}
+
+.footer p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
