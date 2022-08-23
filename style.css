@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+
+body {
+  margin: 1rem;
+  padding: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.header_container {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.navbar img {
+  align-self: center;
+  height: 28px;
+  left: 12px;
+  top: 10px;
+}
+
+main {
+  background-image: url("/assets/header-illsutration-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro_section h1 {
+  color: #172b4d;
+  width: 327px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  height: 192px;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  align-self: center;
+  padding-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.intro_section span {
+  color: rgb(51, 169, 51);
+}
+
+.intro_section p {
+  width: 327px;
+  height: 200px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  align-self: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-top: 2rem;
+}
+
+main > div {
+  align-self: center;
+  margin: 1rem 0;
+
+  /* width: 40px;
+  height: 40px; */
+}
+
+main ul {
+  margin-top: 5rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+main ul a {
+  color: #505f79;
+  font-size: larger;
+}
+
+main ul li {
+  padding: 1rem;
+}
+
+section {
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.underline {
+  width: 50px;
+  border: 2px solid #36b37e;
+  background: #36b37e;
+  border-radius: 10%;
+  margin-top: 0.4rem;
+  margin-bottom: 4rem;
+  align-self: center;
+}
+
+.section_container {
+  display: grid;
+  grid-template-columns: 327px;
+  justify-content: center;
+}
+
+.card {
+  height: 474px;
+  width: 327px;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  margin: 0.5rem 0;
+  border: 2px solid #ebf0ee;
+
+  /* margin-left: -22px; */
+}
+
+.card .img {
+  height: 252px;
+  width: 327px;
+  margin-bottom: 0.5rem;
+}
+
+.card .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  height: 210px;
+  background: #fff;
+  border-radius: 8px;
+  color: #3a4a42;
+}
+
+.card ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.card ul li {
+  padding: 8px;
+  max-width: 103px;
+  height: 32px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  margin-left: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #3a4a42;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
+.card button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 122px;
+  height: 48px;
+  font-weight: 20px;
+  color: #ebf0ee;
+  font-size: large;
+  background: #36b37f;
+  border: 1px solid #36b37f;
+  border-radius: 4px;
+}
+
+.about_me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.about_me_background {
+  background: url("/assets/illustration-\ about\ me-\ mobile.png");
+}
+
+.about_me h2 {
+  margin-top: 2rem;
+  font-weight: bold;
+  color: #172b4d;
+  font-size: 40px;
+}
+
+.about_me p {
+  width: 320px;
+  height: 150px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+  margin: 2rem 0;
+}
+
+.about_me button {
+  padding: 12px;
+  width: 159px;
+  height: 48px;
+  font-size: 15px;
+  background-color: #36b37f;
+  border: 1.5px solid #36b37f;
+  color: #fff;
+  border-radius: 4px;
+  margin: 2rem 0 3rem 0;
+}
+
+.about_me .container {
+  width: 327px;
+  height: 352px;
+  margin: 0.5rem 0;
+  background: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+}
+
+.about_me .container h4 {
+  margin: 2.5rem 0;
+  color: #344563;
+}
+
+.about_me .container ul {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  list-style-type: none;
+}
+
+.about_me .container ul li {
+  align-self: center;
+  padding: 10px;
+  min-width: 60px;
+  font-weight: 600;
+  height: 40px;
+  background: #fff;
+  border-radius: 8px;
+  margin: 3px;
+  font-size: small;
+  color: #36b37e;
+}
