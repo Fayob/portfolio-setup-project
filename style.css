@@ -19,6 +19,11 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.header_container a {
+  color: #172b4d;
+  text-decoration: none;
+}
+
 .desktop_header {
   display: none;
 }
@@ -339,7 +344,7 @@ body {
   justify-content: center;
 }
 
-.footer_lists a {
+.footer_lists li a {
   color: #505f79;
   font-size: larger;
 }
@@ -348,7 +353,7 @@ body {
   padding: 1rem;
 }
 
-.footer a {
+.footer_a {
   text-decoration: none;
   color: #42526e;
 }
@@ -386,12 +391,12 @@ body {
   }
   .desktop_nav_lists a {
     text-decoration: none;
+    color: #344563;
   }
   .desktop_nav_list {
     align-self: center;
     padding: 1rem;
     text-align: center;
-    color: #344563;
     font-family: "Inter" sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -416,7 +421,7 @@ body {
   }
   .intro_section p {
     margin: 0 auto;
-    min-width: 780px;
+    min-width: 80%;
     height: 96px;
     font-family: "Inter";
     font-style: normal;
@@ -480,21 +485,25 @@ body {
     grid-gap: 0.5rem;
   }
   .contact_me {
-    width: 90%;
+    max-width: 75%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     margin: 6rem auto;
   }
   .contact_me_header {
     width: 50%;
     margin-left: 2rem;
+    font-size: 30px;
   }
   .contact_me form {
     width: 50%;
     align-self: flex-start;
     display: flex;
     flex-direction: column;
+    margin-right: 2rem;
+    padding-right: 0.1rem;
   }
   .contact_me form input {
     width: 100%;
