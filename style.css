@@ -368,6 +368,7 @@ body {
     text-align: center;
     margin: 0.5rem auto;
   }
+
   main {
     width: 95%;
     margin: 0 auto;
@@ -377,35 +378,42 @@ body {
     background-repeat: no-repeat;
     vertical-align: middle;
   }
+
   .main_section {
     background-image: none;
   }
+
   .desktop_header {
     display: inline-block;
   }
+
   .desktop_nav_lists {
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style-type: none;
   }
+
   .desktop_nav_lists a {
     text-decoration: none;
     color: #344563;
   }
+
   .desktop_nav_list {
     align-self: center;
     padding: 1rem;
     text-align: center;
-    font-family: "Inter" sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
   }
+
   .header_container {
     display: none;
   }
+
   .intro_section h1 {
     width: 920px;
     height: 170px;
@@ -419,11 +427,12 @@ body {
     letter-spacing: 0.37px;
     color: #172b4d;
   }
+
   .intro_section p {
     margin: 0 auto;
     min-width: 80%;
     height: 96px;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -431,13 +440,16 @@ body {
     text-align: center;
     color: #172b4d;
   }
+
   .main_section ul {
     margin-top: 2rem;
   }
+
   .main_section > div {
     margin-top: 2rem;
     margin-bottom: 20rem;
   }
+
   .work_section h2 {
     width: 447px;
     height: 48px;
@@ -449,9 +461,11 @@ body {
     text-align: center;
     color: #172b4d;
   }
+
   .underline {
     display: none;
   }
+
   .section_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -472,18 +486,22 @@ body {
     color: #42526e;
     margin: 0 auto;
   }
+
   .about_me_background {
     width: 100%;
     margin: 0.5rem auto;
   }
+
   .about_me button {
     margin: 1rem 0 5rem 0;
   }
+
   .containers {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem;
   }
+
   .contact_me {
     max-width: 75%;
     display: flex;
@@ -492,11 +510,13 @@ body {
     align-items: center;
     margin: 6rem auto;
   }
+
   .contact_me_header {
     width: 50%;
     margin-left: 2rem;
     font-size: 30px;
   }
+
   .contact_me form {
     width: 50%;
     align-self: flex-start;
@@ -505,20 +525,25 @@ body {
     margin-right: 2rem;
     padding-right: 0.1rem;
   }
+
   .contact_me form input {
     width: 100%;
   }
+
   .contact_me form textarea {
     width: 100%;
   }
+
   .contact_me button {
     font-weight: 500;
   }
+
   .footer_lists {
     border-top: 0.5px solid #dfe1e6;
     margin-top: 12rem;
     width: 100%;
   }
+
   .footer p {
     display: none;
   }
