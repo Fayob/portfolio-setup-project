@@ -35,6 +35,14 @@ body {
   top: 10px;
 }
 
+.navbar img:hover {
+  height: 36px;
+  transform: rotate(180deg);
+  transition: all 1s ease-in-out 0.5s;
+  animation: rotate 0.9s, pulse 0.4s cubic-bezier(0.49, -1.29, 0.46, 2.3) 0.9s;
+  /* border-radius: 15%; */
+}
+
 .main_section {
   background-image: url("/assets/header-illsutration-mobile@2x.png");
   background-repeat: no-repeat;
@@ -106,6 +114,11 @@ body {
 
 .main_section ul li {
   padding: 1rem;
+}
+
+.main_section ul li:hover {
+  transition: all 1s ease-out 0.4s;
+  transform: scale(1.5);
 }
 
 .work_section {
@@ -356,6 +369,11 @@ body {
 .footer_a {
   text-decoration: none;
   color: #42526e;
+}
+
+.footer_list:hover {
+  transition: all 1s ease-out 0.4s;
+  transform: scale(1.5);
 }
 
 .footer p {
