@@ -43,7 +43,7 @@ body {
 }
 
 .main_section {
-  background-image: url("/assets/header-illsutration-mobile@2x.png");
+  background-image: url("./assets/header-illsutration-mobile@2x.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -229,7 +229,7 @@ body {
 }
 
 .about_me_background {
-  background: url("/assets/illustration-\ about\ me-\ mobile.png");
+  background: url("./assets/illustration-\ about\ me-\ mobile.png");
   background-repeat: no-repeat;
 }
 
@@ -406,7 +406,7 @@ body {
   main {
     width: 95%;
     margin: 0 auto;
-    background: url("/assets/Header-llustration-desktop@2x.png");
+    background: url("./assets/Header-llustration-desktop@2x.png");
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
