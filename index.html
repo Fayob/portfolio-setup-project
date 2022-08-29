@@ -16,59 +16,69 @@
     />
   </head>
   <body>
-    <!-- The header -->
-    <header class="header_container">
-      <h2>Welcome</h2>
-      <nav class="navbar">
-        <img src="/assets/Union.png" alt="" />
-      </nav>
-    </header>
-    <!-- The introduction part -->
     <main>
-      <section class="intro_section">
-        <h1>
-          Hey there. I'm <br />
-          Favour <br />
-          <span>I'm a software developer</span>
-        </h1>
-        <p>
-          I can help you build a product, feature or website Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don't hesitate to contact me.
-        </p>
+      <!-- The header -->
+      <section class="header_section">
+        <header class="header_container">
+          <a href="#"><h2>Welcome</h2></a>
+          <nav class="navbar">
+            <img src="/assets/Union.png" alt="navbar" />
+          </nav>
+        </header>
+        <header class="desktop_header">
+          <nav>
+            <ul class="desktop_nav_lists">
+              <li class="desktop_nav_list"><a href="#">Portfolio</a></li>
+              <li class="desktop_nav_list"><a href="#">About</a></li>
+              <li class="desktop_nav_list"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
       </section>
-      <ul>
-        <li>
-          <a href="www.facebook.com"
-            ><i class="fa fa-facebook" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li>
-          <a href="twitter.com/Fabimworld2536"
-            ><i class="fa fa-twitter" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li>
-          <a href="www.github.com/fayob"
-            ><i class="fa fa-github" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li>
-          <a href="www.linkedin.com/in/abimbola-ade"
-            ><i class="fa fa-linkedin" aria-hidden="true"></i
-          ></a>
-        </li>
-      </ul>
-      <div>
-        <img src="/assets/Disabled.png" alt="arrow" width="40" height="40" />
-      </div>
+
+      <!-- The introduction part -->
+      <section class="main_section">
+        <article class="intro_section">
+          <h1>
+            Hey there. I'm Favour <br />
+            <span>I'm a software developer</span>
+          </h1>
+          <p>
+            I can help you build a product, feature or website Look through some
+            of my work and experience! If you like what you see and have a
+            project you need coded, don't hesitate to contact me.
+          </p>
+        </article>
+        <ul>
+          <li>
+            <a href="www.facebook.com"
+              ><i class="fa fa-facebook" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="twitter.com/Fabimworld2536"
+              ><i class="fa fa-twitter" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="www.github.com/fayob"
+              ><i class="fa fa-github" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="www.linkedin.com/in/abimbola-ade"
+              ><i class="fa fa-linkedin" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+        <div>
+          <img src="/assets/Disabled.png" alt="arrow" width="40" height="40" />
+        </div>
+      </section>
     </main>
     <!-- The Project Section -->
-    <section>
-      <h2>
-        My Recent <br />
-        Works
-      </h2>
+    <section class="work_section">
+      <h2>My Recent Works</h2>
       <div class="underline"></div>
       <div class="section_container">
         <article class="card">
@@ -152,18 +162,18 @@
       </div>
     </section>
     <!-- The About Article -->
-    <section>
-      <article class="about_me">
-        <div class="about_me_background">
-          <h2>About me</h2>
-          <p>
-            I can help you build a product , feature or website Look through
-            some of my work and experience! If you like what you see and have a
-            project you need coded, don't hesitate to contact me.
-          </p>
-          <button>Get My Resume</button>
-        </div>
+    <section class="about_me">
+      <div class="about_me_background">
+        <h2>About me</h2>
+        <p>
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don't hesitate to contact me.
+        </p>
+        <button type="button">Get My Resume</button>
+      </div>
 
+      <article class="containers">
         <div class="container">
           <img src="/assets/icon-languages.png" alt="languages" />
           <h4>Languages</h4>
@@ -233,27 +243,27 @@
     <footer class="footer">
       <ul class="footer_lists">
         <li class="footer_list">
-          <a href="www.facebook.com"
+          <a href="www.facebook.com" class="footer_a"
             ><i class="fa fa-facebook" aria-hidden="true"></i
           ></a>
         </li>
         <li class="footer_list">
-          <a href="twitter.com/Fabimworld2536"
+          <a href="twitter.com/Fabimworld2536" class="footer_a"
             ><i class="fa fa-twitter" aria-hidden="true"></i
           ></a>
         </li>
         <li class="footer_list">
-          <a href="www.github.com/fayob"
+          <a href="www.github.com/fayob" class="footer_a"
             ><i class="fa fa-github" aria-hidden="true"></i
           ></a>
         </li>
         <li class="footer_list">
-          <a href="www.linkedin.com/in/abimbola-ade"
+          <a href="www.linkedin.com/in/abimbola-ade" class="footer_a"
             ><i class="fa fa-linkedin" aria-hidden="true"></i
           ></a>
         </li>
       </ul>
-      <a href="#"><p>Adedejifavour6@gmail.com</p></a>
+      <a href="#" class="footer_a"><p>Adedejifavour6@gmail.com</p></a>
     </footer>
   </body>
 </html>
