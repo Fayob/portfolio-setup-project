@@ -43,7 +43,7 @@ body {
 }
 
 .main_section {
-  background-image: url("/assets/header-illsutration-mobile@2x.png");
+  background-image: url("assets/header-illsutration-mobile@2x.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
