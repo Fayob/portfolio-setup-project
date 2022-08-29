@@ -108,11 +108,11 @@ body {
   font-size: larger;
 }
 
-.main_section ul li {
+.main_section-list {
   padding: 1rem;
 }
 
-.main_section ul li:hover {
+.main_section-list:hover {
   transition: all 1s ease-out 0.4s;
   transform: scale(1.5);
 }
@@ -176,14 +176,14 @@ body {
   color: #3a4a42;
 }
 
-.card ul {
+.card_lists {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style-type: none;
 }
 
-.card ul li {
+.card_lists li {
   padding: 8px;
   max-width: 103px;
   height: 32px;
@@ -197,7 +197,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.card button {
+.card_button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,7 +212,7 @@ body {
   border-radius: 4px;
 }
 
-.card button:hover {
+.card_button:hover {
   background: white;
   color: #36b37f;
   font-weight: bold;
@@ -252,7 +252,7 @@ body {
   margin: 2rem 0;
 }
 
-.about_me button {
+.about_me-button {
   cursor: pointer;
   padding: 12px;
   width: 159px;
@@ -265,7 +265,7 @@ body {
   margin: 2rem 0 3rem 0;
 }
 
-.about_me button:hover {
+.about_me-button:hover {
   background: white;
   color: #36b37f;
   font-weight: bold;
