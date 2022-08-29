@@ -94,9 +94,6 @@ body {
 .main_section > div {
   align-self: center;
   margin: 1rem 0;
-
-  /* width: 40px;
-  height: 40px; */
 }
 
 .main_section ul {
@@ -115,10 +112,10 @@ body {
   padding: 1rem;
 }
 
-/* .main_section ul li:hover {
+.main_section ul li:hover {
   transition: all 1s ease-out 0.4s;
   transform: scale(1.5);
-} */
+}
 
 .work_section {
   font-size: 30px;
@@ -215,6 +212,13 @@ body {
   border-radius: 4px;
 }
 
+.card button:hover {
+  background: white;
+  color: #36b37f;
+  font-weight: bold;
+  border: 2px solid #36b37f;
+}
+
 .about_me {
   display: flex;
   flex-direction: column;
@@ -259,6 +263,13 @@ body {
   color: #fff;
   border-radius: 4px;
   margin: 2rem 0 3rem 0;
+}
+
+.about_me button:hover {
+  background: white;
+  color: #36b37f;
+  font-weight: bold;
+  border: 2px solid #36b37f;
 }
 
 .about_me .container {
@@ -348,6 +359,12 @@ body {
   color: #fff;
   border-radius: 4px;
   margin: 1rem 0;
+}
+
+.contact_me button:hover {
+  background: white;
+  color: #36b37f;
+  border: 1px solid #36b37f;
 }
 
 .footer_lists {
