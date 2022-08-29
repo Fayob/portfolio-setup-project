@@ -37,6 +37,10 @@ Twitter: [@fabimworld2536](https://twitter.com/Fabimworld2536)
 
 LinkedIn: [@abimbola-ade](https://www.linkedin.com/in/abimbola-ade)
 
+## Live Demo
+
+[my_portfolio](https://fayob.github.io/portfolio-setup-project/)
+
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
