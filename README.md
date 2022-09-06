@@ -26,6 +26,7 @@ Major languages: html, css
 - the whole project was properly set up in the html file
 - after the html file is being set up, the style file was added
 - the necessary styling was added to the style file.
+- added javascript code to alter the mobile menu (DOM manipulation).
 
 ## Author
 
