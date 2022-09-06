@@ -48,40 +48,40 @@ body {
   display: none;
   background-color: white;
   border: 1px solid rgb(255, 255, 255);
-  }
-  
-  .close_hamburger {
+}
+
+.close_hamburger {
   position: absolute;
   top: 5px;
   right: 10px;
-  }
-  
-  .hamburger_lists {
+}
+
+.hamburger_lists {
   font-family: inherit;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   margin-top: 2.5rem;
-  }
-  
-  .hamburger_list {
+}
+
+.hamburger_list {
   list-style-type: none;
   margin: 1rem;
-  }
-  
-  .hamburger_list_a {
+}
+
+.hamburger_list_a {
   text-decoration: none;
   color: #3a4a42;
-  }
-  
-  .visible {
+}
+
+.visible {
   display: block;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
-  }
+}
 
 .main_section {
   background-image: url("./assets/header-illsutration-mobile@2x.png");

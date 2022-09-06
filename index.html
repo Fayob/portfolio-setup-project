@@ -22,7 +22,7 @@
         <header class="header_container">
           <a href="#"><h2>Welcome</h2></a>
           <nav class="navbar">
-            <img src="./assets/Union.png" alt="navbar" />
+            <img src="./assets/Union.png" alt="navbar" class="hamburger" />
           </nav>
         </header>
         <header class="desktop_header">
@@ -37,7 +37,7 @@
       </section>
 
       <!-- The introduction part -->
-      <section class="main_section">
+      <section id="portfolio" class="main_section">
         <article class="intro_section">
           <h1>
             Hey there. I'm Favour <br />
@@ -76,6 +76,29 @@
         </div>
       </section>
     </main>
+
+    <!-- Hamburger -->
+    <aside>
+      <nav class="side_nav">
+        <img
+          src="./assets/Enabled.png"
+          alt="cancel icon"
+          class="close_hamburger"
+        />
+        <ul class="hamburger_lists">
+          <li class="hamburger_list">
+            <a href="#portfolio" class="hamburger_list_a">Portfolio</a>
+          </li>
+          <li class="hamburger_list">
+            <a href="#about" class="hamburger_list_a">About</a>
+          </li>
+          <li class="hamburger_list">
+            <a href="#contact" class="hamburger_list_a">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
     <!-- The Project Section -->
     <section class="work_section">
       <h2>My Recent Works</h2>
@@ -162,7 +185,7 @@
       </div>
     </section>
     <!-- The About Article -->
-    <section class="about_me">
+    <section id="about" class="about_me">
       <div class="about_me_background">
         <h2>About me</h2>
         <p>
@@ -208,7 +231,7 @@
         </div>
       </article>
     </section>
-    <section class="contact_me">
+    <section id="contact" class="contact_me">
       <h4 class="contact_me_header">
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
@@ -265,5 +288,7 @@
       </ul>
       <a href="#" class="footer_a"><p>Adedejifavour6@gmail.com</p></a>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>
