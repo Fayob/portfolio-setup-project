@@ -75,6 +75,8 @@ body {
   color: #3a4a42;
 }
 
+/* pop up mobile */
+
 .visible {
   display: block;
   position: fixed;
@@ -484,6 +486,8 @@ body {
     font-size: 15px;
     line-height: 20px;
   }
+
+  /* pop up desktop */
 
   .header_container {
     display: none;
