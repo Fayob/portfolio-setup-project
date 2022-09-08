@@ -522,6 +522,14 @@ body {
   margin-bottom: 2rem;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 @media (min-width: 768px) {
   body {
     text-align: center;
