@@ -4,8 +4,9 @@ const hamburger = document.querySelector('.hamburger');
 const closeHamburger = document.querySelector('.close_hamburger');
 const hamburgerList = document.querySelectorAll('.hamburger_list');
 const sideNav = document.querySelector('.side_nav');
-const projectButtons = document.querySelectorAll('.card_button');
+// const projectButtons = document.querySelectorAll('.card_button');
 const popUpContainer = document.querySelector('.popup_container');
+const workSection = document.querySelector('.work_section');
 
 hamburger.addEventListener('click', () => {
   sideNav.classList.add('visible');
@@ -150,10 +151,105 @@ const projectList = [
   },
 ];
 
-projectButtons.forEach((project) => {
-  project.addEventListener('click', () => {
-    const mainButton = projectList.find((info) => info.id === project.dataset.id);
-    popUpContainer.innerHTML = `
+const projectSection = [
+  {
+    heading: 'Multi-Post Stories Gain+Glory',
+    technologies: {
+      ruby: 'Ruby on rails',
+      css: 'css',
+      javascript: 'Javascript',
+      html: 'html',
+    },
+    button: 'See Project',
+  },
+  {
+    heading: 'Multi-Post Stories Gain+Glory',
+    technologies: {
+      ruby: 'Ruby on rails',
+      css: 'css',
+      javascript: 'Javascript',
+      html: 'html',
+    },
+    button: 'See Project',
+  },
+  {
+    heading: 'Multi-Post Stories Gain+Glory',
+    technologies: {
+      ruby: 'Ruby on rails',
+      css: 'css',
+      javascript: 'Javascript',
+      html: 'html',
+    },
+    button: 'See Project',
+  },
+  {
+    heading: 'Multi-Post Stories Gain+Glory',
+    technologies: {
+      ruby: 'Ruby on rails',
+      css: 'css',
+      javascript: 'Javascript',
+      html: 'html',
+    },
+    button: 'See Project',
+  },
+  {
+    heading: 'Multi-Post Stories Gain+Glory',
+    technologies: {
+      ruby: 'Ruby on rails',
+      css: 'css',
+      javascript: 'Javascript',
+      html: 'html',
+    },
+    button: 'See Project',
+  },
+  {
+    heading: 'Multi-Post Stories Gain+Glory',
+    technologies: {
+      ruby: 'Ruby on rails',
+      css: 'css',
+      javascript: 'Javascript',
+      html: 'html',
+    },
+    button: 'See Project',
+  },
+];
+
+function Projects() {
+  const header = document.createElement('h2');
+  header.textContent = 'My Recent Works';
+  workSection.appendChild(header);
+  const div = document.createElement('div');
+  div.classList.add('underline');
+  workSection.appendChild(div);
+  const anotherDiv = document.createElement('div');
+  anotherDiv.classList.add('section_container');
+  workSection.appendChild(anotherDiv);
+
+  projectSection.forEach((project) => {
+    anotherDiv.insertAdjacentHTML('beforeend', `
+        <article class="card">
+          <div class="img"></div>
+          <div class="details">
+            <h5>${project.heading}</h5>
+            <ul class="card_lists">
+              <li>${project.technologies.ruby}</li>
+              <li>${project.technologies.css}</li>
+              <li>${project.technologies.javascript}</li>
+              <li>${project.technologies.html}</li>
+            </ul>
+            <button type="button" data-id="1" class="card_button">
+              ${project.button}
+            </button>
+          </div>
+        </article>
+    `);
+  });
+
+  const projectButtons = document.querySelectorAll('.card_button');
+  projectButtons.forEach((project) => {
+    project.addEventListener('click', () => {
+      const mainButton = projectList.find((info) => info.id === project.dataset.id);
+      popUpContainer.innerHTML = `
     <img src=${mainButton.featuredImage} alt="main Image" class="popup_mobile" />
     <img src=${mainButton.desktopImage} alt="main Image" class="popup_desktop"/>
     <h1 class="popup_heading">${mainButton.name}</h1>
@@ -176,15 +272,18 @@ projectButtons.forEach((project) => {
     <a href=${mainButton.source} class="popup_button"> See Source <img src="./assets/Vector.png" alt="source icon" class="popup_icon" /> </a>
     </div>
     `;
-    const img = document.createElement('img');
-    img.src = './assets/Enabled.png';
-    img.alt = 'close icon';
-    img.classList.add('close_popup');
-    popUpContainer.appendChild(img);
-    popUpContainer.classList.add('visible');
+      const img = document.createElement('img');
+      img.src = './assets/Enabled.png';
+      img.alt = 'close icon';
+      img.classList.add('close_popup');
+      popUpContainer.appendChild(img);
+      popUpContainer.classList.add('visible');
 
-    img.addEventListener('click', () => {
-      popUpContainer.classList.remove('visible');
+      img.addEventListener('click', () => {
+        popUpContainer.classList.remove('visible');
+      });
     });
   });
-});
+}
+
+Projects();
