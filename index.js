@@ -79,8 +79,8 @@ const projectList = [
     },
     liveVersion: 'https://fayob.github.io/portfolio-setup-project/',
     source: 'https://github.com/fayob/portfolio-setup-project',
-    sourceIcon: './assets/Icon-Export.png',
-    liveVersionIcon: './assets/Vector.png',
+    liveVersionIcon: './assets/Icon-Export.png',
+    sourceIcon: './assets/Vector.png',
   },
   {
     id: '4',
@@ -172,8 +172,8 @@ projectButtons.forEach((project) => {
     </ul>
     <p class="popup_description">${mainButton.description}</p>
     <div class="popup_buttons">
-    <a href=${mainButton.liveVersion} class="popup_button"> See Live </a>
-    <a href=${mainButton.source} class="popup_button"> See Source </a>
+    <a href=${mainButton.liveVersion} class="popup_button"> See Live <img src="./assets/Icon-Export.png" alt="live icon" class="popup_icon" /> </a>
+    <a href=${mainButton.source} class="popup_button"> See Source <img src="./assets/Vector.png" alt="source icon" class="popup_icon" /> </a>
     </div>
     `;
     const img = document.createElement('img');
