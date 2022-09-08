@@ -489,6 +489,58 @@ body {
 
   /* pop up desktop */
 
+  .popup_heading {
+    width: 50%;
+    margin-left: 2rem;
+    }
+    
+    .popup_desktop {
+    display: inline-block;
+    width: 90%;
+    height: 80%;
+    margin-bottom: 1rem;
+    }
+    
+    .popup_buttons {
+    position: absolute;
+    top: 80vh;
+    right: 5vw;
+    }
+    
+    .popup_description {
+    margin: 0 auto;
+    }
+    
+    .popup_desktop_lists {
+    display: flex;
+    width: 70%;
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #3a4a42;
+    }
+    
+    .popup_desktop_list {
+    list-style: none;
+    padding: 0.2rem 0.6rem;
+    margin: 0 0.3rem;
+     background: #ebf0ee;
+     border-radius: 4px;
+    }
+    
+    .popup_lists {
+    display: none;
+    }
+    
+    .popup_mobile {
+    display: none;
+    }
+
   .header_container {
     display: none;
   }
