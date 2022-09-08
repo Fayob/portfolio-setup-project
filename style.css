@@ -74,7 +74,7 @@ body {
   text-decoration: none;
   color: #3a4a42;
 }
-/* pop up mobile */
+
 .popup_container {
   width: 100vw;
   height: 100vh;
@@ -86,76 +86,75 @@ body {
   left: 0;
   z-index: 20;
   overflow: scroll;
-  }
-  
-  .popup_mobile {
+}
+
+.popup_mobile {
   display: inline-block;
-  /* margin: 0 auto; */
   width: 90%;
-  }
-  
-  .popup_desktop {
+}
+
+.popup_desktop {
   display: none;
-  }
-  
-  .popup_heading {
+}
+
+.popup_heading {
   width: 70%;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  }
-  
-  .popup_lists {
+}
+
+.popup_lists {
   display: flex;
   width: 70%;
   margin: 0.5rem 0;
   padding: 0 0.5rem;
-  font-family: "Inter";
+  font-family: inherit;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #3a4a42;
-  }
-  
-  .popup_desktop_lists {
+}
+
+.popup_desktop_lists {
   display: none;
-  }
-  
-  .popup_list {
+}
+
+.popup_list {
   list-style: none;
   padding: 0.2rem 0.6rem;
   margin: 0 0.3rem;
   background: #ebf0ee;
   border-radius: 4px;
-  }
-  
-  .popup_description {
+}
+
+.popup_description {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  }
-  
-  .close_popup {
+}
+
+.close_popup {
   position: absolute;
   top: 0;
   right: 0;
-  }
-  
-  .popup_buttons {
+}
+
+.popup_buttons {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-top: 1rem;
-  }
-  
-  .popup_button {
-  font-family: "Inter" sans-serif;
+}
+
+.popup_button {
+  font-family: "Inter", sans-serif;
   font-style: normal;
   height: 36px;
   padding: 1rem;
@@ -168,14 +167,19 @@ body {
   text-align: center;
   justify-content: space-between;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
   background: #36b37f;
-  border-radius: 4px;
   border: 1px solid #dfe1e6;
   border-radius: 8px;
   text-decoration: none;
-  }
-  
+}
+
+.popup_icon {
+  display: inline-block;
+  padding-left: 5px;
+  height: 20px;
+  width: 25px;
+}
 
 .visible {
   display: block;
@@ -355,13 +359,6 @@ body {
   border-radius: 4px;
 }
 
-.card_button:hover {
-  background: white;
-  color: #36b37f;
-  font-weight: bold;
-  border: 2px solid #36b37f;
-}
-
 .about_me {
   display: flex;
   flex-direction: column;
@@ -406,13 +403,6 @@ body {
   color: #fff;
   border-radius: 4px;
   margin: 2rem 0 3rem 0;
-}
-
-.about_me-button:hover {
-  background: white;
-  color: #36b37f;
-  font-weight: bold;
-  border: 2px solid #36b37f;
 }
 
 .about_me .container {
@@ -504,12 +494,6 @@ body {
   margin: 1rem 0;
 }
 
-.contact_me button:hover {
-  background: white;
-  color: #36b37f;
-  border: 1px solid #36b37f;
-}
-
 .footer_lists {
   list-style-type: none;
   display: flex;
@@ -592,54 +576,54 @@ body {
   .popup_heading {
     width: 50%;
     margin-left: 2rem;
-    }
-    
-    .popup_desktop {
+  }
+
+  .popup_desktop {
     display: inline-block;
     width: 90%;
     height: 80%;
     margin-bottom: 1rem;
-    }
-    
-    .popup_buttons {
+  }
+
+  .popup_buttons {
     position: absolute;
     top: 80vh;
     right: 5vw;
-    }
-    
-    .popup_description {
+  }
+
+  .popup_description {
     margin: 0 auto;
-    }
-    
-    .popup_desktop_lists {
+  }
+
+  .popup_desktop_lists {
     display: flex;
     width: 70%;
     margin: 0.5rem 0;
     padding: 0 0.5rem;
-    font-family: "Inter";
+    font-family: inherit;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
     color: #3a4a42;
-    }
-    
-    .popup_desktop_list {
+  }
+
+  .popup_desktop_list {
     list-style: none;
     padding: 0.2rem 0.6rem;
     margin: 0 0.3rem;
-     background: #ebf0ee;
-     border-radius: 4px;
-    }
-    
-    .popup_lists {
+    background: #ebf0ee;
+    border-radius: 4px;
+  }
+
+  .popup_lists {
     display: none;
-    }
-    
-    .popup_mobile {
+  }
+
+  .popup_mobile {
     display: none;
-    }
+  }
 
   .header_container {
     display: none;
