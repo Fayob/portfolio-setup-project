@@ -9,6 +9,12 @@ body {
   margin: 1rem;
   padding: 1rem;
   font-family: "Inter", sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .header_container {
@@ -73,6 +79,114 @@ body {
 .hamburger_list_a {
   text-decoration: none;
   color: #3a4a42;
+}
+
+.popup {
+  display: none;
+}
+
+.popup_container {
+  max-width: 920px;
+  height: 100%;
+  background: white;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  overflow: scroll;
+}
+
+.popup_mobile {
+  display: inline-block;
+  width: 100%;
+}
+
+.popup_desktop {
+  display: none;
+}
+
+.popup_heading {
+  width: 85%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
+  color: #172b4d;
+  margin-bottom: 1rem;
+}
+
+.popup_lists {
+  display: flex;
+  margin: 1rem 0;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+}
+
+.popup_desktop_lists {
+  display: none;
+}
+
+.popup_list {
+  list-style: none;
+  padding: 0.6rem 0.6rem;
+  margin: 0 0.3rem;
+  background: #ebf0ee;
+  border-radius: 4px;
+}
+
+.popup_description {
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 1rem;
+  color: #172b4d;
+}
+
+.close_popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.popup_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.popup_button {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  padding: 0.6rem;
+  margin-left: 1rem;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: #36b37f;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.popup_icon {
+  display: inline-block;
+  padding-left: 5px;
+  height: 20px;
+  width: 25px;
 }
 
 .visible {
@@ -253,13 +367,6 @@ body {
   border-radius: 4px;
 }
 
-.card_button:hover {
-  background: white;
-  color: #36b37f;
-  font-weight: bold;
-  border: 2px solid #36b37f;
-}
-
 .about_me {
   display: flex;
   flex-direction: column;
@@ -304,13 +411,6 @@ body {
   color: #fff;
   border-radius: 4px;
   margin: 2rem 0 3rem 0;
-}
-
-.about_me-button:hover {
-  background: white;
-  color: #36b37f;
-  font-weight: bold;
-  border: 2px solid #36b37f;
 }
 
 .about_me .container {
@@ -402,12 +502,6 @@ body {
   margin: 1rem 0;
 }
 
-.contact_me button:hover {
-  background: white;
-  color: #36b37f;
-  border: 1px solid #36b37f;
-}
-
 .footer_lists {
   list-style-type: none;
   display: flex;
@@ -483,6 +577,97 @@ body {
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
+  }
+
+  /* pop up desktop */
+
+  .popup_body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    background: #c1c7d0;
+    background-blend-mode: multiply;
+  }
+
+  .popup_container {
+    max-width: 920px;
+    max-height: 1083px;
+    text-align: center;
+    margin: 0 10%;
+    align-self: center;
+    padding: 1rem;
+    padding-right: 0;
+    position: fixed;
+    top: 1rem;
+    overflow-x: hidden;
+  }
+
+  .popup_heading {
+    width: 58%;
+    margin-left: 2rem;
+    text-align: start;
+  }
+
+  .popup_desktop {
+    display: inline-block;
+    width: 95%;
+    height: 616px;
+    margin: 1.8rem 0;
+  }
+
+  .popup_buttons {
+    position: absolute;
+    top: 670px;
+    right: 2vw;
+  }
+
+  .close_popup {
+    position: absolute;
+    top: 0;
+    right: 18px;
+  }
+
+  .popup_description {
+    width: 95%;
+    margin: 0 3rem 0 2rem;
+    text-align: start;
+  }
+
+  .popup_desktop_lists {
+    display: flex;
+    width: 70%;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    text-align: start;
+    padding: 0 0.5rem;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #3a4a42;
+  }
+
+  .popup_desktop_list {
+    list-style: none;
+    padding: 0.2rem 0.6rem;
+    margin: 0 0.3rem;
+    background: #ebf0ee;
+    border-radius: 4px;
+  }
+
+  .popup_lists {
+    display: none;
+  }
+
+  .popup_mobile {
+    display: none;
   }
 
   .header_container {
