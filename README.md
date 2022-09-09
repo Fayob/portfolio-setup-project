@@ -28,7 +28,7 @@ Major languages: html, css
 - the necessary styling was added to the style file.
 - added javascript code to alter the mobile menu (DOM manipulation).
 
-## Author
+## Author 1
 
 👨 Abimbola Favour Adedeji
 
@@ -38,6 +38,12 @@ Twitter: [@fabimworld2536](https://twitter.com/Fabimworld2536)
 
 LinkedIn: [@abimbola-ade](https://www.linkedin.com/in/abimbola-ade)
 
+## Author 2
+
+👨 James A. Manu
+
+GitHub: [@jaamanu](https://github.com/jaamanu)
+
 ## Live Demo
 
 [my_portfolio](https://fayob.github.io/portfolio-setup-project/)
@@ -45,7 +51,7 @@ LinkedIn: [@abimbola-ade](https://www.linkedin.com/in/abimbola-ade)
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the issues page.
+Feel free to check the [issues page](https://github.com/Fayob/portfolio-setup-project/issues/14).
 
 ## Show your support
 
@@ -53,4 +59,4 @@ Give a ⭐️ if you like this project!
 
 ## License
 
-This project is MIT licensed.
+This project is [MIT](#) licensed.
