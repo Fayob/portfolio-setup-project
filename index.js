@@ -7,6 +7,8 @@ const sideNav = document.querySelector('.side_nav');
 const workSection = document.querySelector('.work_section');
 const popUp = document.querySelector('.popup');
 const email = document.getElementById('email');
+const title = document.getElementById('name');
+const description = document.getElementById('description');
 const inTouch = document.querySelector('.form_button');
 
 hamburger.addEventListener('click', () => {
@@ -297,10 +299,32 @@ Projects();
 
 inTouch.addEventListener('click', () => {
   const emailValue = email.value;
+
   if (emailValue.trim() === '' || emailValue !== emailValue.toLowerCase()) {
     email.setCustomValidity('Please supply a valid email address in lower case');
     email.reportValidity();
   } else {
     email.setCustomValidity('');
   }
+});
+
+document.addEventListener('input', (e) => {
+  e.preventDefault();
+  const emailValue = email.value;
+  const titleValue = title.value;
+  const descriptionValue = description.value;
+  const userInput = {
+    title: titleValue,
+    email: emailValue,
+    description: descriptionValue,
+  };
+
+  localStorage.setItem('userInfo', JSON.stringify(userInput));
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const getValue = JSON.parse(localStorage.getItem('userInfo'));
+  title.value = getValue.title;
+  email.value = getValue.email;
+  description.value = getValue.description;
 });
