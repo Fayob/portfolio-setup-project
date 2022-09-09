@@ -160,6 +160,7 @@
 
       <form action="https://formspree.io/f/mpznwqrl" method="post">
         <input
+          id="name"
           type="text"
           name="full_name"
           placeholder="Full name"
@@ -167,12 +168,14 @@
           required
         />
         <input
+          id="email"
           type="email"
           name="user_email"
           placeholder="Email address"
           required
         />
         <textarea
+          id="description"
           name="comment"
           maxlength="500"
           cols="20"
@@ -181,7 +184,7 @@
           required
         ></textarea>
 
-        <button type="submit">Get in touch</button>
+        <button type="submit" class="form_button">Get in touch</button>
       </form>
     </section>
     <footer class="footer">

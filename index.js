@@ -4,10 +4,10 @@ const hamburger = document.querySelector('.hamburger');
 const closeHamburger = document.querySelector('.close_hamburger');
 const hamburgerList = document.querySelectorAll('.hamburger_list');
 const sideNav = document.querySelector('.side_nav');
-// const projectButtons = document.querySelectorAll('.card_button');
-// const popUpContainer = document.querySelector('.popup_container');
 const workSection = document.querySelector('.work_section');
 const popUp = document.querySelector('.popup');
+const email = document.getElementById('email');
+const inTouch = document.querySelector('.form_button');
 
 hamburger.addEventListener('click', () => {
   sideNav.classList.add('visible');
@@ -294,3 +294,13 @@ function Projects() {
 }
 
 Projects();
+
+inTouch.addEventListener('click', () => {
+  const emailValue = email.value;
+  if (emailValue.trim() === '' || emailValue !== emailValue.toLowerCase()) {
+    email.setCustomValidity('Please supply a valid email address in lower case');
+    email.reportValidity();
+  } else {
+    email.setCustomValidity('');
+  }
+});
