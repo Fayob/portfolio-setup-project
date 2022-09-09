@@ -91,7 +91,6 @@ body::-webkit-scrollbar {
   background: white;
   padding: 1rem;
   position: fixed;
-  /* display: none; */
   top: 0;
   left: 0;
   z-index: 20;

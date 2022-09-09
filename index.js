@@ -5,8 +5,9 @@ const closeHamburger = document.querySelector('.close_hamburger');
 const hamburgerList = document.querySelectorAll('.hamburger_list');
 const sideNav = document.querySelector('.side_nav');
 // const projectButtons = document.querySelectorAll('.card_button');
-const popUpContainer = document.querySelector('.popup_container');
+// const popUpContainer = document.querySelector('.popup_container');
 const workSection = document.querySelector('.work_section');
+const popUp = document.querySelector('.popup');
 
 hamburger.addEventListener('click', () => {
   sideNav.classList.add('visible');
@@ -248,6 +249,12 @@ function Projects() {
   const projectButtons = document.querySelectorAll('.card_button');
   projectButtons.forEach((project) => {
     project.addEventListener('click', () => {
+      const popUpBody = document.createElement('article');
+      popUpBody.classList.add('popup_body');
+      popUp.appendChild(popUpBody);
+      const popUpContainer = document.createElement('div');
+      popUpContainer.classList.add('popup_container');
+      popUpBody.appendChild(popUpContainer);
       const mainButton = projectList.find((info) => info.id === project.dataset.id);
       popUpContainer.innerHTML = `
     <img src=${mainButton.featuredImage} alt="main Image" class="popup_mobile" />
@@ -277,10 +284,10 @@ function Projects() {
       img.alt = 'close icon';
       img.classList.add('close_popup');
       popUpContainer.appendChild(img);
-      popUpContainer.classList.add('visible');
+      popUp.classList.add('visible');
 
       img.addEventListener('click', () => {
-        popUpContainer.classList.remove('visible');
+        popUp.classList.remove('visible');
       });
     });
   });
