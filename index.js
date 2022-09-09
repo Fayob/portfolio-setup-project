@@ -299,8 +299,6 @@ Projects();
 
 inTouch.addEventListener('click', () => {
   const emailValue = email.value;
-  const titleValue = title.value;
-  const descriptionValue = description.value;
 
   if (emailValue.trim() === '' || emailValue !== emailValue.toLowerCase()) {
     email.setCustomValidity('Please supply a valid email address in lower case');
@@ -308,7 +306,13 @@ inTouch.addEventListener('click', () => {
   } else {
     email.setCustomValidity('');
   }
+});
 
+document.addEventListener('input', (e) => {
+  e.preventDefault();
+  const emailValue = email.value;
+  const titleValue = title.value;
+  const descriptionValue = description.value;
   const userInput = {
     title: titleValue,
     email: emailValue,
@@ -318,8 +322,8 @@ inTouch.addEventListener('click', () => {
   localStorage.setItem('userInfo', JSON.stringify(userInput));
 });
 
-const getValue = JSON.parse(localStorage.getItem('userInfo'));
 document.addEventListener('DOMContentLoaded', () => {
+  const getValue = JSON.parse(localStorage.getItem('userInfo'));
   title.value = getValue.title;
   email.value = getValue.email;
   description.value = getValue.description;
