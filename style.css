@@ -425,6 +425,7 @@ body::-webkit-scrollbar {
 .about_me .container {
   max-width: 20rem;
   padding: 0.5rem 0;
+  margin-bottom: 0.5rem;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
