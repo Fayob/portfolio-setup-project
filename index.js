@@ -1,5 +1,3 @@
-// import projectList from './data.js';
-
 const hamburger = document.querySelector('.hamburger');
 const closeHamburger = document.querySelector('.close_hamburger');
 const hamburgerList = document.querySelectorAll('.hamburger_list');
@@ -28,8 +26,8 @@ const projectList = [
     id: '1',
     name: 'Keeping track of hundreds of components',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release",
-    featuredImage: './assets/Snapshoot-Portfolio.png',
-    desktopImage: './assets/Snapshoot-Portfolio-desktop.png',
+    featuredImage: './assets/To-Do-Screenshot.JPG',
+    desktopImage: './assets/To-Do-Screenshot.JPG',
     closeIcon: './assets/Enabled.png',
     technologies: {
       ruby: 'Ruby on rails',
@@ -41,15 +39,15 @@ const projectList = [
       terminal: 'Terminal',
       codepen: 'Codepen',
     },
-    liveVersion: 'https://fayob.github.io/portfolio-setup-project/',
-    source: 'github.com/fayob/portfolio-setup-project',
+    liveVersion: 'https://fayob.github.io/To-Do-List-Project/dist/',
+    source: 'https://github.com/Fayob/To-Do-List-Project',
   },
   {
     id: '2',
     name: 'Keeping track of hundreds of components',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release",
-    featuredImage: './assets/Snapshoot-Portfolio.png',
-    desktopImage: './assets/Snapshoot-Portfolio-desktop.png',
+    featuredImage: './assets/Awesome-Book-scereenshot.JPG',
+    desktopImage: './assets/Awesome-Book-scereenshot.JPG',
     closeIcon: './assets/Enabled.png',
     technologies: {
       ruby: 'Ruby on rails',
@@ -61,8 +59,8 @@ const projectList = [
       terminal: 'Terminal',
       codepen: 'Codepen',
     },
-    liveVersion: 'https://fayob.github.io/portfolio-setup-project/',
-    source: 'github.com/fayob/portfolio-setup-project',
+    liveVersion: 'https://fayob.github.io/awesome-book-project/',
+    source: 'https://github.com/Fayob/awesome-book-project',
   },
   {
     id: '3',
@@ -156,7 +154,23 @@ const projectList = [
 
 const projectSection = [
   {
-    heading: 'Multi-Post Stories Gain+Glory',
+    id: '1',
+    heading: 'To-Do List Project',
+    image: './assets/To-Do-Screenshot.JPG',
+    alt: 'to-do list image',
+    technologies: {
+      ruby: 'Ruby on Rails',
+      css: 'css',
+      javascript: 'Javascript',
+      html: 'html',
+    },
+    button: 'See Project',
+  },
+  {
+    id: '2',
+    heading: 'Awesome Book Project',
+    image: './assets/Awesome-Book-scereenshot.JPG',
+    alt: 'awesome-book image',
     technologies: {
       ruby: 'Ruby on rails',
       css: 'css',
@@ -166,7 +180,10 @@ const projectSection = [
     button: 'See Project',
   },
   {
+    id: '3',
     heading: 'Multi-Post Stories Gain+Glory',
+    image: '',
+    alt: '',
     technologies: {
       ruby: 'Ruby on rails',
       css: 'css',
@@ -176,7 +193,10 @@ const projectSection = [
     button: 'See Project',
   },
   {
+    id: '4',
     heading: 'Multi-Post Stories Gain+Glory',
+    image: '',
+    alt: '',
     technologies: {
       ruby: 'Ruby on rails',
       css: 'css',
@@ -186,7 +206,10 @@ const projectSection = [
     button: 'See Project',
   },
   {
+    id: '5',
     heading: 'Multi-Post Stories Gain+Glory',
+    image: '',
+    alt: '',
     technologies: {
       ruby: 'Ruby on rails',
       css: 'css',
@@ -196,17 +219,10 @@ const projectSection = [
     button: 'See Project',
   },
   {
+    id: '6',
     heading: 'Multi-Post Stories Gain+Glory',
-    technologies: {
-      ruby: 'Ruby on rails',
-      css: 'css',
-      javascript: 'Javascript',
-      html: 'html',
-    },
-    button: 'See Project',
-  },
-  {
-    heading: 'Multi-Post Stories Gain+Glory',
+    image: '',
+    alt: '',
     technologies: {
       ruby: 'Ruby on rails',
       css: 'css',
@@ -231,7 +247,7 @@ function Projects() {
   projectSection.forEach((project) => {
     anotherDiv.insertAdjacentHTML('beforeend', `
         <article class="card">
-          <div class="img"></div>
+          <div class="img"><img src=${project.image} class="card_image" alt=${project.alt} /></div>
           <div class="details">
             <h5>${project.heading}</h5>
             <ul class="card_lists">
@@ -240,7 +256,7 @@ function Projects() {
               <li>${project.technologies.javascript}</li>
               <li>${project.technologies.html}</li>
             </ul>
-            <button type="button" data-id="1" class="card_button">
+            <button type="button" data-id=${project.id} class="card_button">
               ${project.button}
             </button>
           </div>
