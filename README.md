@@ -28,7 +28,7 @@ Major languages: html, css
 - the necessary styling was added to the style file.
 - added javascript code to alter the mobile menu (DOM manipulation).
 
-## Author 1
+## Author
 
 👨 Abimbola Favour Adedeji
 
@@ -37,12 +37,6 @@ GitHub: [@fayob](https://github.com/fayob)
 Twitter: [@fabimworld2536](https://twitter.com/Fabimworld2536)
 
 LinkedIn: [@abimbola-ade](https://www.linkedin.com/in/abimbola-ade)
-
-## Author 2
-
-👨 James A. Manu
-
-GitHub: [@jaamanu](https://github.com/jaamanu)
 
 ## Live Demo
 
