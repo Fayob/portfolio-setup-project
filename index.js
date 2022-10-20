@@ -24,41 +24,23 @@ hamburgerList.forEach((list) => list.addEventListener('click', () => {
 const projectList = [
   {
     id: '1',
-    name: 'Keeping track of hundreds of components',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release",
+    name: 'To-Do List Project',
+    description: "A to do list that helps you manage your daily task properly. you can add, edit, delete, check a task if completed, remove only completed task, remove any task you don't need on the list, etc. This project was developed using HTML, CSS and Javascript as the major language.",
     featuredImage: './assets/To-Do-Screenshot.JPG',
     desktopImage: './assets/To-Do-Screenshot.JPG',
     closeIcon: './assets/Enabled.png',
-    technologies: {
-      ruby: 'Ruby on rails',
-      css: 'css',
-      javascript: 'Javascript',
-      codekit: 'Codekit',
-      github: 'GitHub',
-      bootstrap: 'Bootstrap',
-      terminal: 'Terminal',
-      codepen: 'Codepen',
-    },
+    technologies: ['html', 'css', 'Javascript', 'webpack', 'GitHub', 'Terminal'],
     liveVersion: 'https://fayob.github.io/To-Do-List-Project/dist/',
     source: 'https://github.com/Fayob/To-Do-List-Project',
   },
   {
     id: '2',
-    name: 'Keeping track of hundreds of components',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release",
-    featuredImage: './assets/Awesome-Book-scereenshot.JPG',
-    desktopImage: './assets/Awesome-Book-scereenshot.JPG',
+    name: 'Awesome Book Project',
+    description: 'A website that helps to keep record of book title and its author. You can add, edit, delete any book of your choice. HTML, CSS and Javascript are the major technology used in this project.',
+    featuredImage: './assets/Awesome-Book-screenshot.JPG',
+    desktopImage: './assets/Awesome-Book-screenshot.JPG',
     closeIcon: './assets/Enabled.png',
-    technologies: {
-      ruby: 'Ruby on rails',
-      css: 'css',
-      javascript: 'Javascript',
-      codekit: 'Codekit',
-      github: 'GitHub',
-      bootstrap: 'Bootstrap',
-      terminal: 'Terminal',
-      codepen: 'Codepen',
-    },
+    technologies: ['Ruby on rails', 'css', 'Javascript', 'Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersion: 'https://fayob.github.io/awesome-book-project/',
     source: 'https://github.com/Fayob/awesome-book-project',
   },
@@ -69,16 +51,7 @@ const projectList = [
     featuredImage: './assets/Snapshoot-Portfolio.png',
     desktopImage: './assets/Snapshoot-Portfolio-desktop.png',
     closeIcon: './assets/Enabled.png',
-    technologies: {
-      ruby: 'Ruby on rails',
-      css: 'css',
-      javascript: 'Javascript',
-      codekit: 'Codekit',
-      github: 'GitHub',
-      bootstrap: 'Bootstrap',
-      terminal: 'Terminal',
-      codepen: 'Codepen',
-    },
+    technologies: ['Ruby on rails', 'css', 'Javascript', 'Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersion: 'https://fayob.github.io/portfolio-setup-project/',
     source: 'https://github.com/fayob/portfolio-setup-project',
     liveVersionIcon: './assets/Icon-Export.png',
@@ -91,16 +64,7 @@ const projectList = [
     featuredImage: './assets/Snapshoot-Portfolio.png',
     desktopImage: './assets/Snapshoot-Portfolio-desktop.png',
     closeIcon: './assets/Enabled.png',
-    technologies: {
-      ruby: 'Ruby on rails',
-      css: 'css',
-      javascript: 'Javascript',
-      codekit: 'Codekit',
-      github: 'GitHub',
-      bootstrap: 'Bootstrap',
-      terminal: 'Terminal',
-      codepen: 'Codepen',
-    },
+    technologies: ['Ruby on rails', 'css', 'Javascript', 'Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersion: 'https://fayob.github.io/portfolio-setup-project/',
     source: 'https://github.com/fayob/portfolio-setup-project',
     sourceIcon: './assets/Icon-Export.png',
@@ -113,16 +77,7 @@ const projectList = [
     featuredImage: './assets/Snapshoot-Portfolio.png',
     desktopImage: './assets/Snapshoot-Portfolio-desktop.png',
     closeIcon: './assets/Enabled.png',
-    technologies: {
-      ruby: 'Ruby on rails',
-      css: 'css',
-      javascript: 'Javascript',
-      codekit: 'Codekit',
-      github: 'GitHub',
-      bootstrap: 'Bootstrap',
-      terminal: 'Terminal',
-      codepen: 'Codepen',
-    },
+    technologies: ['Ruby on rails', 'css', 'Javascript', 'Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersion: 'https://fayob.github.io/portfolio-setup-project/',
     source: 'https://github.com/fayob/portfolio-setup-project',
     sourceIcon: './assets/Icon-Export.png',
@@ -135,16 +90,7 @@ const projectList = [
     featuredImage: './assets/Snapshoot-Portfolio.png',
     desktopImage: './assets/Snapshoot-Portfolio-desktop.png',
     closeIcon: './assets/Enabled.png',
-    technologies: {
-      ruby: 'Ruby on rails',
-      css: 'css',
-      javascript: 'Javascript',
-      codekit: 'Codekit',
-      github: 'GitHub',
-      bootstrap: 'Bootstrap',
-      terminal: 'Terminal',
-      codepen: 'Codepen',
-    },
+    technologies: ['Ruby on rails', 'css', 'Javascript', 'Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersion: 'https://fayob.github.io/portfolio-setup-project/',
     source: 'https://github.com/fayob/portfolio-setup-project',
     sourceIcon: './assets/Icon-Export.png',
@@ -158,25 +104,15 @@ const projectSection = [
     heading: 'To-Do List Project',
     image: './assets/To-Do-Screenshot.JPG',
     alt: 'to-do list image',
-    technologies: {
-      ruby: 'Ruby on Rails',
-      css: 'css',
-      javascript: 'Javascript',
-      html: 'html',
-    },
+    technologies: ['html', 'css', 'javascript'],
     button: 'See Project',
   },
   {
     id: '2',
     heading: 'Awesome Book Project',
-    image: './assets/Awesome-Book-scereenshot.JPG',
+    image: './assets/Awesome-Book-screenshot.JPG',
     alt: 'awesome-book image',
-    technologies: {
-      ruby: 'Ruby on rails',
-      css: 'css',
-      javascript: 'Javascript',
-      html: 'html',
-    },
+    technologies: ['html', 'css', 'Javascript'],
     button: 'See Project',
   },
   {
@@ -184,12 +120,7 @@ const projectSection = [
     heading: 'Multi-Post Stories Gain+Glory',
     image: '',
     alt: '',
-    technologies: {
-      ruby: 'Ruby on rails',
-      css: 'css',
-      javascript: 'Javascript',
-      html: 'html',
-    },
+    technologies: ['Ruby', 'Ruby on rails', 'React'],
     button: 'See Project',
   },
   {
@@ -197,12 +128,7 @@ const projectSection = [
     heading: 'Multi-Post Stories Gain+Glory',
     image: '',
     alt: '',
-    technologies: {
-      ruby: 'Ruby on rails',
-      css: 'css',
-      javascript: 'Javascript',
-      html: 'html',
-    },
+    technologies: ['React', 'Ruby', 'Ruby on rails'],
     button: 'See Project',
   },
   {
@@ -210,12 +136,7 @@ const projectSection = [
     heading: 'Multi-Post Stories Gain+Glory',
     image: '',
     alt: '',
-    technologies: {
-      ruby: 'Ruby on rails',
-      css: 'css',
-      javascript: 'Javascript',
-      html: 'html',
-    },
+    technologies: ['Ruby', 'Ruby on rails', 'React'],
     button: 'See Project',
   },
   {
@@ -223,12 +144,7 @@ const projectSection = [
     heading: 'Multi-Post Stories Gain+Glory',
     image: '',
     alt: '',
-    technologies: {
-      ruby: 'Ruby on rails',
-      css: 'css',
-      javascript: 'Javascript',
-      html: 'html',
-    },
+    technologies: ['React', 'Ruby', 'Ruby on rails'],
     button: 'See Project',
   },
 ];
@@ -250,11 +166,8 @@ function Projects() {
           <div class="img"><img src=${project.image} class="card_image" alt=${project.alt} /></div>
           <div class="details">
             <h5>${project.heading}</h5>
-            <ul class="card_lists">
-              <li>${project.technologies.ruby}</li>
-              <li>${project.technologies.css}</li>
-              <li>${project.technologies.javascript}</li>
-              <li>${project.technologies.html}</li>
+            <ul class="card_lists"> 
+              ${project.technologies.map((tech) => `<li> ${tech} </li>`).join('')} 
             </ul>
             <button type="button" data-id=${project.id} class="card_button">
               ${project.button}
@@ -279,17 +192,10 @@ function Projects() {
     <img src=${mainButton.desktopImage} alt="main Image" class="popup_desktop"/>
     <h1 class="popup_heading">${mainButton.name}</h1>
     <ul class="popup_lists">
-    <li class="popup_list">${mainButton.technologies.ruby}</li>
-    <li class="popup_list">${mainButton.technologies.css}</li>
-    <li class="popup_list">${mainButton.technologies.javascript}</li>
-    </ul>
+    ${mainButton.technologies.slice(0, 4).map((tech) => `<li class="popup_list">${tech}</li>`).join('')}
+    </ul> 
     <ul class="popup_desktop_lists">
-    <li class="popup_desktop_list">${mainButton.technologies.codekit}</li>
-    <li class="popup_desktop_list">${mainButton.technologies.github}</li>
-    <li class="popup_desktop_list">${mainButton.technologies.javascript}</li>
-    <li class="popup_desktop_list">${mainButton.technologies.bootstrap}</li>
-    <li class="popup_desktop_list">${mainButton.technologies.terminal}</li>
-    <li class="popup_desktop_list">${mainButton.technologies.codepen}</li>
+    ${mainButton.technologies.map((tech) => `<li class="popup_desktop_list"> ${tech} </li>`).join('')}
     </ul>
     <p class="popup_description">${mainButton.description}</p>
     <div class="popup_buttons">
