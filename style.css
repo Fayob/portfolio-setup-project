@@ -314,6 +314,11 @@ body::-webkit-scrollbar {
   border: 2px solid #ebf0ee;
 }
 
+.card:hover {
+  transition: all 1s ease-out 0.4s;
+  transform: scale(1.08);
+}
+
 .card .img {
   height: 252px;
   max-width: 318px;
