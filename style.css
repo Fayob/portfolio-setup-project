@@ -582,6 +582,11 @@ body::-webkit-scrollbar {
     color: #344563;
   }
 
+  .desktop_nav_list:hover {
+    transition: all 1s ease-out 0.4s;
+    transform: scale(1.5);
+  }
+
   .desktop_nav_list {
     align-self: center;
     padding: 1rem;
