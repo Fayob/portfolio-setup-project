@@ -34,6 +34,11 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.navbar {
+  display: block;
+  margin-left: 5rem;
+}
+
 .navbar img {
   align-self: center;
   height: 28px;
@@ -54,6 +59,13 @@ body::-webkit-scrollbar {
   display: none;
   background-color: white;
   border: 1px solid rgb(255, 255, 255);
+  animation-name: animateleft;
+  animation-duration: 1s
+}
+
+@keyframes animateleft {
+  from {left: -300px; opacity: 0}
+  to {left: 0; opacity: 1}
 }
 
 .close_hamburger {
@@ -95,6 +107,13 @@ body::-webkit-scrollbar {
   left: 0;
   z-index: 20;
   overflow: scroll;
+  animation-name: animatetop;
+  animation-duration: 1s
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
 }
 
 .popup_mobile {
@@ -254,7 +273,7 @@ body::-webkit-scrollbar {
 }
 
 .main_section ul {
-  margin-top: 5rem;
+  margin-top: 8rem;
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -628,12 +647,11 @@ body::-webkit-scrollbar {
     overflow-x: hidden;
     justify-content: center;
     align-items: center;
-    background: rgba(101, 101, 101, 0.561);
-    background-blend-mode: multiply;
+    background: rgba(102, 102, 102, 0.506);
   }
 
   .popup_container {
-    max-width: 80%;
+    max-width: 70%;
     max-height: 95%;
     text-align: center;
     margin: 0 10%;
@@ -752,7 +770,7 @@ body::-webkit-scrollbar {
   }
 
   .main_section ul {
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
 
   .main_section > div {
