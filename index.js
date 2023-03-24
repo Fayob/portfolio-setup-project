@@ -26,7 +26,7 @@ const projectList = [
   {
     id: '1',
     name: 'TO-DO LIST',
-    description: "A to do list that helps you manage your daily task properly. you can add, edit, delete, check a task if completed, remove only completed task, remove any task you don't need on the list, etc. This project was developed using HTML, CSS and Javascript as the major language.",
+    description: "A To-Do List is an application that helps you manage your daily task properly, you can add, edit, delete, check a task if completed, remove any task you don't need on the list, etc. This project was developed using HTML, CSS, and Javascript as the major language.",
     featuredImage: './assets/To-Do-Screenshot.JPG',
     desktopImage: './assets/To-Do-Screenshot.JPG',
     closeIcon: './assets/Enabled.png',
@@ -48,7 +48,7 @@ const projectList = [
   {
     id: '3',
     name: 'BUDGET APP',
-    description: "Budget App is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.",
+    description: "Budget App is a mobile web application where you can manage your budget: you have a list of transactions associated with a category so that you can see how much money you spent and on what.",
     featuredImage: './assets/budget_app.png',
     desktopImage: './assets/budget_app.png',
     closeIcon: './assets/Enabled.png',
@@ -59,7 +59,7 @@ const projectList = [
   {
     id: '4',
     name: 'BOOKING API',
-    description: "Booking App is an api app to book an appointment with a coach. The user will be able to reserve a coach and book an appointment with him/her online.",
+    description: "Booking App is an API app to book an appointment with a coach. The user will be able to reserve a coach and book an appointment with him/her online.",
     featuredImage: './assets/booking_api.png',
     desktopImage: './assets/booking_api.png',
     closeIcon: './assets/Enabled.png',
@@ -72,7 +72,7 @@ const projectList = [
   {
     id: '5',
     name: 'TV SHOW',
-    description: "A web app that lets you find out more about a group of TV shows. You can like and comment on your favorite shows. Second capstone project in Microverse. Built with JavaScript, WebPack, TvMaze API.",
+    description: "A web app that lets you find out more about a group of TV shows. You can like and comment on your favorite shows. Second capstone project in Microverse. Built with JavaScript, WebPack, and TvMaze API.",
     featuredImage: './assets/tv-show.png',
     desktopImage: './assets/tv-show.png',
     closeIcon: './assets/Enabled.png',
@@ -85,7 +85,7 @@ const projectList = [
   {
     id: '6',
     name: 'FINANCE TRACKER',
-    description: "Finance Tracker App is a web application where users can add stock value of companies to their portfolio and keep track them on a daily basis and they can as well search and add friends to their account. Users can check friend's profile and add stocks they don't have to their portfolio from their friend's profile page. Built with rails technology",
+    description: "Finance Tracker App is a web application where users can add the stock value of companies to their portfolio and keep track of them daily and they can as well search and add friends to their account. Users can check friends' profiles and add stocks they don't have to their portfolio from their friend's profile pages. Built with rails technology",
     featuredImage: './assets/stock_tracker.png',
     desktopImage: './assets/stock_tracker.png',
     closeIcon: './assets/Enabled.png',
@@ -198,8 +198,8 @@ function Projects() {
     </ul>
     <p class="popup_description">${mainButton.description}</p>
     <div class="popup_buttons">
-    <a href=${mainButton.liveVersion} class="popup_button"> See Live <img src="./assets/Icon-Export.png" alt="live icon" class="popup_icon" /> </a>
-    <a href=${mainButton.source} class="popup_button"> See Source <img src="./assets/Vector.png" alt="source icon" class="popup_icon" /> </a>
+    <a href=${mainButton.liveVersion} class="popup_button" target='_blank'> See Live <img src="./assets/Icon-Export.png" alt="live icon" class="popup_icon" /> </a>
+    <a href=${mainButton.source} class="popup_button" target='_blank'> See Source <img src="./assets/Vector.png" alt="source icon" class="popup_icon" /> </a>
     </div>
     `;
       const img = document.createElement('img');
@@ -208,12 +208,21 @@ function Projects() {
       img.classList.add('close_popup');
       popUpContainer.appendChild(img);
       popUp.classList.add('visible');
-      body.classList.toggle('popup_open');
+      body.classList.add('popup_open');
 
       img.addEventListener('click', () => {
         popUp.classList.remove('visible');
         body.classList.remove('popup_open')
+        popUp.innerHTML = ''
       });
+
+      window.onclick = function(event) {
+        if (event.target == popUpBody) {
+          popUp.classList.remove('visible');
+          body.classList.remove('popup_open')
+          popUp.innerHTML = ''
+        }
+      }
     });
   });
 }
