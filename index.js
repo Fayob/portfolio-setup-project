@@ -1,3 +1,4 @@
+const body = document.querySelector('body')
 const hamburger = document.querySelector('.hamburger');
 const closeHamburger = document.querySelector('.close_hamburger');
 const hamburgerList = document.querySelectorAll('.hamburger_list');
@@ -107,7 +108,7 @@ const projectSection = [
   },
   {
     id: '2',
-    heading: 'Awesome Book',
+    heading: 'Math Magician',
     image: './assets/math_magician.png',
     alt: 'math-magician image',
     technologies: ['React', 'CSS', 'Javascript'],
@@ -167,7 +168,7 @@ function Projects() {
             <ul class="card_lists"> 
               ${project.technologies.map((tech) => `<li> ${tech} </li>`).join('')} 
             </ul>
-            <button type="button" data-id=${project.id} class="card_button">
+            <button type="button" data-id=${project.id} class="card_button button">
               ${project.button}
             </button>
           </div>
@@ -207,9 +208,11 @@ function Projects() {
       img.classList.add('close_popup');
       popUpContainer.appendChild(img);
       popUp.classList.add('visible');
+      body.classList.toggle('popup_open');
 
       img.addEventListener('click', () => {
         popUp.classList.remove('visible');
+        body.classList.remove('popup_open')
       });
     });
   });
