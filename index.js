@@ -82,16 +82,29 @@ const projectList = [
     // sourceIcon: './assets/Icon-Export.png',
     // liveVersionIcon: './assets/Vector.png',
   },
+  // {
+  //   id: '6',
+  //   name: 'FINANCE TRACKER',
+  //   description: "Finance Tracker App is a web application where users can add the stock value of companies to their portfolio and keep track of them daily and they can as well search and add friends to their account. Users can check friends' profiles and add stocks they don't have to their portfolio from their friend's profile pages. Built with rails technology",
+  //   featuredImage: './assets/stock_tracker.png',
+  //   desktopImage: './assets/stock_tracker.png',
+  //   closeIcon: './assets/Enabled.png',
+  //   technologies: ['Ruby on rails', 'CSS', 'Javascript', 'PostgreSQL', 'GitHub', 'Bootstrap', 'Terminal', 'Git'],
+  //   liveVersion: 'https://fayob.github.io/portfolio-setup-project/',
+  //   source: 'https://github.com/Fayob/stock_tracker',
+  //   // sourceIcon: './assets/Icon-Export.png',
+  //   // liveVersionIcon: './assets/Vector.png',
+  // },
   {
     id: '6',
-    name: 'FINANCE TRACKER',
-    description: "Finance Tracker App is a web application where users can add the stock value of companies to their portfolio and keep track of them daily and they can as well search and add friends to their account. Users can check friends' profiles and add stocks they don't have to their portfolio from their friend's profile pages. Built with rails technology",
-    featuredImage: './assets/stock_tracker.png',
-    desktopImage: './assets/stock_tracker.png',
+    name: 'BOOKSTORE APP',
+    description: "A desktop website that helps to keep a record of the book title and its author. Built using React",
+    featuredImage: './assets/bookstore.png',
+    desktopImage: './assets/bookstore.png',
     closeIcon: './assets/Enabled.png',
-    technologies: ['Ruby on rails', 'CSS', 'Javascript', 'PostgreSQL', 'GitHub', 'Bootstrap', 'Terminal', 'Git'],
-    liveVersion: 'https://fayob.github.io/portfolio-setup-project/',
-    source: 'https://github.com/Fayob/stock_tracker',
+    technologies: ['React', 'CSS', 'Javascript', 'GitHub', 'Bootstrap', 'Terminal', 'Git'],
+    liveVersion: 'https://bookstore-fayob.netlify.app/',
+    source: 'https://github.com/Fayob/Bookstore',
     // sourceIcon: './assets/Icon-Export.png',
     // liveVersionIcon: './assets/Vector.png',
   },
@@ -103,48 +116,50 @@ const projectSection = [
     heading: 'To-Do List',
     image: './assets/To-Do-Screenshot.JPG',
     alt: 'to-do list image',
-    technologies: ['HTML', 'CSS', 'Javascript'],
-    button: 'See Project',
+    technologies: ['HTML', 'CSS', 'Javascript']
   },
   {
     id: '2',
     heading: 'Math Magician',
     image: './assets/math_magician.png',
     alt: 'math-magician image',
-    technologies: ['React', 'CSS', 'Javascript'],
-    button: 'See Project',
+    technologies: ['React', 'CSS', 'Javascript']
   },
   {
     id: '3',
     heading: 'Budget App',
     image: './assets/budget_app.png',
     alt: 'budget-app image',
-    technologies: ['Ruby', 'Ruby on rails', 'Bootstrap'],
-    button: 'See Project',
+    technologies: ['Ruby', 'Ruby on rails', 'Bootstrap']
   },
   {
     id: '4',
     heading: 'Booking App API',
     image: './assets/booking_api.png',
     alt: 'booking-api image',
-    technologies: ['Swagger', 'Ruby', 'Ruby on rails'],
-    button: 'See Project',
+    technologies: ['Swagger', 'Ruby', 'Ruby on rails']
   },
   {
     id: '5',
     heading: 'Tv Show App',
     image: './assets/tv-show.png',
     alt: 'tv-show image',
-    technologies: ['Javascript', 'HTML', 'CSS'],
-    button: 'See Project',
+    technologies: ['Javascript', 'HTML', 'CSS']
   },
+  // {
+  //   id: '6',
+  //   heading: 'Finance Tracker',
+  //   image: './assets/stock_tracker.png',
+  //   alt: 'stock_tracker image',
+  //   technologies: ['Bootstrap', 'Ruby', 'Ruby on rails'],
+  //   button: 'See Project',
+  // },
   {
     id: '6',
-    heading: 'Finance Tracker',
-    image: './assets/stock_tracker.png',
+    heading: 'BookStore App',
+    image: './assets/bookstore.png',
     alt: 'stock_tracker image',
-    technologies: ['Bootstrap', 'Ruby', 'Ruby on rails'],
-    button: 'See Project',
+    technologies: ['Bootstrap', 'React', 'JavaScript']
   },
 ];
 
@@ -169,7 +184,7 @@ function Projects() {
               ${project.technologies.map((tech) => `<li> ${tech} </li>`).join('')} 
             </ul>
             <button type="button" data-id=${project.id} class="card_button button">
-              ${project.button}
+              See Project
             </button>
           </div>
         </article>
