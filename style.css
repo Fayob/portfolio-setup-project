@@ -402,10 +402,10 @@ body::-webkit-scrollbar {
   width: 122px;
   padding: 0.7rem;
   font-weight: 20px;
-  color: #ebf0ee;
+  color: #fff;
   font-size: large;
-  background: #36b37f;
-  border: 1px solid #36b37f;
+  background: #2C5945;
+  border: 1px solid #2C5945;
   border-radius: 4px;
   position: absolute;
   bottom: 10px;
@@ -421,7 +421,7 @@ body::-webkit-scrollbar {
 }
 
 .about_me_background {
-  background: url("./assets/illustration-about-me-mobile.png");
+  /* background: url("./assets/illustration-about-me-mobile.png"); */
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -437,14 +437,13 @@ body::-webkit-scrollbar {
 
 .about_me p {
   width: 320px;
-  height: 150px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
   color: #42526e;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .about_me-button {
@@ -453,11 +452,11 @@ body::-webkit-scrollbar {
   width: 159px;
   height: 48px;
   font-size: 15px;
-  background-color: #36b37f;
-  border: 1.5px solid #36b37f;
+  background-color: #2C5945;
+  border: 1.5px solid #2C5945;
   color: #fff;
   border-radius: 4px;
-  margin: 2rem 0 3rem 0;
+  margin: 1rem 0 3rem 0;
 }
 
 .about_me-button a {
@@ -477,6 +476,10 @@ body::-webkit-scrollbar {
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
+}
+
+.about_me h2 {
+  margin-bottom: 1rem;
 }
 
 .about_me .container h4 {
@@ -502,7 +505,7 @@ body::-webkit-scrollbar {
   border-radius: 8px;
   margin: 3px;
   font-size: small;
-  color: #36b37e;
+  color: #2C5945;
 }
 
 .contact_me {
@@ -552,8 +555,8 @@ body::-webkit-scrollbar {
   height: 38px;
   font-size: 17px;
   font-style: normal;
-  background-color: #36b37f;
-  border: 1.5px solid #36b37f;
+  background-color: #2C5945;
+  border: 1.5px solid #2C5945;
   color: #fff;
   border-radius: 4px;
   margin: 1rem 0;
@@ -809,8 +812,8 @@ body::-webkit-scrollbar {
   }
 
   .about_me p {
-    width: 770px;
-    height: 96px;
+    width: 765px;
+    /* height: 96px; */
     font-family: inherit;
     font-style: normal;
     font-weight: 400;
